@@ -1,0 +1,7 @@
+<button (click)="getArticle()"></button>
+
+<div class="home" *ngFor="let article of (articles$ | async)?.article" >
+  <div>
+    {{article.title}}
+  </div>
+</div>
